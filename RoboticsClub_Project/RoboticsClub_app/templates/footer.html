@@ -1,0 +1,55 @@
+{% load static %}
+<section class="widget-section padding">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-sm-6 sm-padding">
+<div class="widget-content">
+<a href="#"><img src="{{setting.icon.url}}" style="height:100px;width:250px" alt="brand"></a>
+<p>{{setting.description}}</p>
+</div>
+</div>
+<div class="col-lg-2 col-sm-6 sm-padding">
+<div class="widget-content">
+<h4>{{setting.club}}</h4>
+<ul class="widget-links">
+<li><a href="{%url 'aboutus'%}">About Us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Clients Reviews</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 sm-padding">
+<div class="widget-content">
+<h4>Address</h4>
+<p>{{setting.contact}}</p>
+<span><a href="{{setting.email}}" class="__cf_email__" data-cfemail="80c8e5ececefc0c1ece5f8e1d4e8e5ede5aeeee5f4">[email&#160;protected]</a></span>
+<span>{{setting.phone}}</span>
+</div>
+</div>
+<div class="col-lg-4 col-sm-6 sm-padding">
+<div class="widget-content">
+<h4>Newslatter Subscription</h4>
+<p>Subscribe and get 10% off from our <br>architecture company.</p>
+<div class="subscribe-box clearfix">
+<div class="subscribe-form-wrap">
+<form action="#" class="subscribe-form">
+<input type="email" name="email" id="subs-email" class="form-input" placeholder="Enter Your Email Address...">
+<button type="submit" class="submit-btn">Subscribe</button>
+<div id="subscribe-result">
+<p class="subscription-success"></p>
+<p class="subscription-error"></p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer-section align-center">
+<div class="container">
+<p><a href="{{setting.smtpserver}}">DURC © 2021. All Rights Reserved.</a></p>
+</div>
+</footer>

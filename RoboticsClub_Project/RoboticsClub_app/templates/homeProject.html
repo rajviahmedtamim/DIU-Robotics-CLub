@@ -1,0 +1,31 @@
+{% load static %}
+<section class="projects-section padding">
+<div class="container">
+<div class="row d-flex align-items-center">
+<div class="col-lg-8 col-md-6 sm-padding">
+<div class="section-heading mb-40">
+<span>Projects</span>
+<h2>Discover the most fascinating <br>projects in our Club</h2>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 sm-padding text-right">
+<a href="{%url 'Multipleproject'%}" class="default-btn">View All Projects</a>
+</div>
+</div>
+<div id="projects-carousel" class="projects-carousel box-shadow owl-carousel">
+
+    {% for p in sliding_image %}
+<div class="project-item">
+<img src="{{p.imageurl}}" style="width:100%;height:277.5px" alt="projects">
+<div class="overlay"></div>
+<a href="{{p.imageurl}}" class="view-icon img-popup" data-gall="project"> <i class="fas fa-expand"></i></a>
+<div class="projects-content">
+<a href="#" class="category">{{p.category}}</a>
+<h3><a href="{% url 'singleproject' id=p.id%}" class="tittle">{{p.title}}</a></h3>
+</div>
+</div>
+{% endfor %}
+
+</div>
+</div>
+</section>

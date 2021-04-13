@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "flaticon2";
+    src: url("../fonts/flaticon2.ttf?50857dbcaf7c85b702c7948a1f143a98") format("truetype"),
+url("../fonts/flaticon2.woff?50857dbcaf7c85b702c7948a1f143a98") format("woff"),
+url("../fonts/flaticon2.woff2?50857dbcaf7c85b702c7948a1f143a98") format("woff2"),
+url("../fonts/flaticon2.eot?50857dbcaf7c85b702c7948a1f143a98#iefix") format("embedded-opentype"),
+url("../fonts/flaticon2.svg?50857dbcaf7c85b702c7948a1f143a98#flaticon") format("svg");
+}
+
+i[class^="flaticon2-"]:before, i[class*=" flaticon2-"]:before {
+    font-family: flaticon2 !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon2-ai:before {
+    content: "\f101";
+}
+.flaticon2-chip:before {
+    content: "\f102";
+}
+.flaticon2-creativity:before {
+    content: "\f103";
+}
+.flaticon2-lab:before {
+    content: "\f104";
+}
+.flaticon2-management:before {
+    content: "\f105";
+}
+.flaticon2-project-management:before {
+    content: "\f106";
+}
+.flaticon2-puzzle:before {
+    content: "\f107";
+}
+.flaticon2-repair:before {
+    content: "\f108";
+}
+.flaticon2-technology:before {
+    content: "\f109";
+}

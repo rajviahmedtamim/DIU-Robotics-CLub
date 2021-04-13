@@ -1,0 +1,42 @@
+{% extends 'home.html'%}
+{% load static %}
+{% block container %}
+<div class="card bg-dark text-white">
+    <img class="img-fluid" src="{{event.imageurl}}" style="height:250px; width:1500px" alt="Card image">
+    <div class="card-img-overlay text-center pt-3">
+        <div class="card-body">
+            <div class="middle-text slide-def">
+                <div class="cap-dec wow fadeInUp" data-wow-duration=".9s" data-wow-delay="0.8s" style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.8s; animation-name: fadeInUp;">
+                    <p>All Over The worlds</p>
+                </div>
+                <div class="cap-title wow fadeInUp" data-wow-duration=".9s" data-wow-delay="0.8s" style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.8s; animation-name: fadeInUp;">
+                    <h2>{{event.title}}</h2>
+                </div>
+                <div class="date-address wow fadeInUp" data-wow-duration=".9s" data-wow-delay="0.8s" style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.8s; animation-name: fadeInUp;">
+                    <div class="event-date"> <i class="zmdi zmdi-calendar-note"></i>{{event.date}}</div>
+                    <div class="event-location"> <i class="zmdi zmdi-pin"></i>15/a Rampura, Bonsrei, Dhaka - 1000 </div>
+                </div>
+                <div class="slider-btn wow fadeInDown pt-1" data-wow-duration=".9s" data-wow-delay="0.8s" style="visibility: visible; animation-duration: 0.9s; animation-delay: 0.8s; animation-name: fadeInDown;"> <a class="btn btn-primary btn-sm" href="#">Registration</a> </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="cr-section about-area bg-white section-padding-md">
+                <div class="container">
+                    <div class="about-text text-center p-5">
+                        <img src="{%static ''%}img/favicon.png" style="height:30px; width=50px" alt="about icons">
+                        <h4>Painting exhibition showcases an array of style</h4>
+                        <h2>Welcome !</h2>
+						<p class="col-sm-6 col-md-10 ml-5">The exhibition also features a workshop for artists and writers on March 26, where the participants would express and exchange their thoughts on the theme ‘Nature's fury over Japan'. Organised by the Indo-Russian Cultural &amp; Friendship Society (IRCFS), it of a group of passionate artists who believe that enabling a shared space for artists with different areas of expertise and varied experiences would enrich the art and promote healthy exchange and learning.</p>
+						<div class="button-group">
+							<a href="schedule.html" class="cr-btn cr-btn-blue">
+								<span>Buy Ticket</span>
+							</a>
+							<a href="about-us.html" class="cr-btn cr-btn-red">
+								<span>View More</span>
+							</a>
+						</div>
+                    </div>
+                </div>
+            </section>
+{% endblock container%}
